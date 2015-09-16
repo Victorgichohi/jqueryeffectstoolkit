@@ -1,0 +1,32 @@
+.body{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	overflow: hidden;
+	heigh:600px;/*the 100px difference in height
+	between this window height and that of the background will be used in calculation
+	it gives us 100px of movement*/
+}
+.parallax-background{
+	height: 700px;
+
+}
+.car{
+	background-image: url(car.jpg);
+}
+.duck{
+	background-image: url(duck.jpg);
+	background-size: cover;
+}
+.mj{
+	background-image: url(mj.jpg);
+}
+.bike{
+	background-image: url(bike.jpg);
+}
