@@ -3,12 +3,12 @@
 	padding: 0;
 }
 .content{
-	height: 1500px;
+	height: 2500px;
 	background-color: E8CAC8;
 }
 .big-image{
-	padding: 300px;
-	background-image: url(hayley.gif);
+	padding: 500px 0;
+	background-image: url(monster.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	-webkit- transition:all 0.25 ease;
