@@ -7,6 +7,16 @@
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--countdown links-->
+     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/countdown/jquery.countdown.css" />
+
 		<title>Video Background</title>
 
 		<style type="text/css">
@@ -21,7 +31,7 @@
 			}
 
 			.background-wrap {
-				position: fixed;
+				position: absolute;
 				z-index: -1000;
 				width: 100%;
 				height: 100%;
@@ -73,6 +83,21 @@
             .lefty{
             	margin-left: -5.5%;
             }		
+            .aligny{
+            	margin-left: 0%;
+            }
+            .righty{
+            	float: right;
+            }
+            .white{
+            	width: 100%;
+            	margin-bottom: 30px;
+            	padding-bottom: 90px;
+                background-color: white;
+                opacity: 0.9;
+
+
+            }
 		</style>
 		
 		
@@ -82,11 +107,15 @@
 		<div class="banner">
 		
 
-		<div class="background-wrap">
+		<div class="container background-wrap">
 			<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> 
 				<source src="video.mp4" type="video/mp4">
-				Video not supported
-			</video>          
+			
+			</video> 
+      <!--beginning of countdown html-->
+               <div id="countdown"></div>
+
+    <p id="note"></p>
 		</div>
 
 
@@ -94,6 +123,19 @@
 			
 		</div>
 		<div class="container">
+
+		<div class="row">
+				<div class="col-md-12 nav">
+					<ul>
+						<li><span class="btn btn-default btn-lg clear ">Home</span></li>
+						<li><span class="btn btn-default btn-lg clear ">Register</span></li>
+						<li><span class="btn btn-default btn-lg clear ">Schedule</span></li>
+						<li><span class="btn btn-default btn-lg clear ">Contact</span></li>
+					</ul>
+				</div>
+				
+
+			</div>
 			<div class="row">
 				<div class="col-md-4 lefty"><h3>Firebase Hackathon</h3></div>
 				<div class="col-md-4"></div>
@@ -107,28 +149,109 @@
 				<div class="col-md-2"></div>
 			</div>
 			<br><br><br><br><br><br>
-			
-			<div class="row">
-				<div class="col-md-12 lefty">
-					<ul>
-						<li><span class="btn btn-default btn-lg clear ">Home</span></li>
-						<li><span class="btn btn-default btn-lg clear ">Register</span></li>
-						<li><span class="btn btn-default btn-lg clear ">Schedule</span></li>
-						<li><span class="btn btn-default btn-lg clear ">Contact</span></li>
-					</ul>
-				</div>
-				
-
-			</div>
             
 
 		</div>
-		
+		</div>
+		<!--end of banner div-->
+            <div class="container aligny white">
+              	<h2>Firebase Hackathon</h2>
+              		<article style="font-size:22px;">
+              			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              		</article>
+              </div>
+              
+              <div class="container aligny">
+              	<div class="row">
+              		<div class="col-md-4">
+              		<h5>Where</h5>
+              		<p>
+              			Fort Mason Center San Francisco, CA
+              		</p>
+              			
+              		</div>
+              		<div class="col-md-4">
+              			<h5>When</h5>
+              			Wednesday and Thursday
+              			March 25 and 26, 2015
+              			Learn more about F8
 
+              		</div>
+              		<div class="col-md-4">
+              			<br><br>
+              			<button class="btn btn-default righty">More About Event</button>
+              		</div>
+              	</div>
 
+              </div>
 
-</div><!--end of banner div-->		
-		
+              <footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Companies</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="http://moringaschool.com/">MoringaSchool</a></li><br>
+        <li><a href="https://www.uber.com/cities/nairobi">Uber</a></li><br>
+        <li><a href="http://mdundo.com/song/11321">Mdundo</a></li><br>
+       
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Specs</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Languages</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#"><spanFireBase</a></li><br>
+        <li><a href="#">HTML5</a></li><br>
+        <li><a href="#">CSS3</a></li><br>
+        <li><a href="#">JavaScript</a></li><br>
+        
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Questions</a></li>
+        <li><a href="#">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mega-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+
+</footer>
+
+		<!-- countdown JavaScript includes -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="assets/countdown/jquery.countdown.js"></script>
+    <script src="assets/js/script.js"></script>
 	</body>
 </html>
 
